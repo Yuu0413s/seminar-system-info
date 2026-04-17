@@ -12,7 +12,9 @@ export default function Home() {
             <a href="#how-it-works" className="hover:text-blue-600 transition-colors">使い方</a>
             <a href="#tech" className="hover:text-blue-600 transition-colors">技術</a>
             <a
-              href="#"
+              href="https://task-checker-jet.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 rounded-full bg-blue-600 px-4 py-1.5 text-white text-xs font-medium hover:bg-blue-700 transition-colors"
             >
               デモを試す
@@ -41,13 +43,17 @@ export default function Home() {
 
             <div className="animate-fade-in-up delay-200 mt-10 flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="#"
+                href="https://task-checker-jet.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-blue-600 px-8 py-3.5 text-white font-semibold shadow-lg shadow-blue-200 hover:bg-blue-700 hover:-translate-y-0.5 transition-all"
               >
                 🚀 デモを試す
               </a>
               <a
-                href="#"
+                href="https://github.com/Yuu0413s/taskviewer"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-gray-300 px-8 py-3.5 text-gray-700 font-semibold hover:border-blue-400 hover:text-blue-600 transition-all"
               >
                 <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
@@ -232,13 +238,17 @@ export default function Home() {
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="#"
+                href="https://task-checker-jet.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-8 py-3.5 text-blue-700 font-semibold hover:bg-blue-50 transition-colors shadow"
               >
                 🚀 デモを試す
               </a>
               <a
-                href="#"
+                href="https://github.com/Yuu0413s/taskviewer"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-blue-400 px-8 py-3.5 text-white font-semibold hover:bg-blue-700 transition-colors"
               >
                 <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
