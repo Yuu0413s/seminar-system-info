@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
@@ -8,9 +10,12 @@ export default function Home() {
             ⏱ Tsumori
           </span>
           <nav className="flex items-center gap-6 text-sm text-gray-600">
-            <a href="#features" className="hover:text-blue-600 transition-colors">機能</a>
-            <a href="#how-it-works" className="hover:text-blue-600 transition-colors">使い方</a>
-            <a href="#tech" className="hover:text-blue-600 transition-colors">技術</a>
+            <div className="hidden sm:flex items-center gap-6">
+              <a href="#features" className="hover:text-blue-600 transition-colors">機能</a>
+              <a href="#how-it-works" className="hover:text-blue-600 transition-colors">使い方</a>
+              <a href="#tech" className="hover:text-blue-600 transition-colors">技術</a>
+              <Link href="/research" className="hover:text-blue-600 transition-colors">研究概要</Link>
+            </div>
             <a
               href="https://tsumori.yuu0413.com/"
               target="_blank"
@@ -113,6 +118,22 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* ===== Research Note ===== */}
+        <section className="py-12 px-4 sm:px-6 bg-blue-50/70 border-y border-blue-100">
+          <div className="max-w-2xl mx-auto text-center">
+            <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+              Tsumoriは、「実行しやすい時間帯」を推定するタスクスケジューリングに関する
+              研究の一環として開発しています。
+            </p>
+            <Link
+              href="/research"
+              className="mt-3 inline-flex items-center gap-1.5 text-blue-600 font-medium hover:text-blue-700 transition-colors"
+            >
+              研究概要を見る →
+            </Link>
           </div>
         </section>
 
