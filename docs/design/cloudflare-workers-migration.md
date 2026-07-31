@@ -80,14 +80,15 @@ introduction-web-page/
      "name": "seminar-info-page",
      "compatibility_date": "<実装日>",
      "assets": {
-       "directory": "./out"
+       "directory": "./out",
+       "not_found_handling": "404-page"
      },
      "routes": [
        { "pattern": "seminar-system-info.yuu0413.com", "custom_domain": true }
      ]
    }
    ```
-6. `wrangler login` でCloudflareアカウント（`Y.shibata0820@gmail.com`、`yuu0413.com` と同一アカウント）に認証
+6. `wrangler login` でCloudflareアカウント（`yuu0413.com` ゾーンを管理するアカウント）に認証
 7. `wrangler deploy` を実行 → 初回デプロイ時にDNSレコード・SSL証明書が自動作成される
 8. `https://seminar-system-info.yuu0413.com` にアクセスして動作確認
 9. 動作確認OKなら、Vercel側はすぐには消さず残しておく（切り戻せるように）
@@ -99,7 +100,7 @@ introduction-web-page/
 |---|---|---|
 | 1 | 目標ドメイン | `seminar-system-info.yuu0413.com`（Issue #1本文の `seminar-info.yuu0413.com` とは異なる。Issue本文を後で修正する必要あり） |
 | 2 | Workerの名前(`wrangler.jsonc`の`name`) | `seminar-info-page` |
-| 3 | Cloudflareアカウント | `yuu0413.com` ゾーンと同一アカウント（`Y.shibata0820@gmail.com`）。`custom_domain: true` による自動DNS作成の前提を満たす |
+| 3 | Cloudflareアカウント | `yuu0413.com` ゾーンと同一アカウント。`custom_domain: true` による自動DNS作成の前提を満たす |
 | 4 | `wrangler login` の認証 | 非対話セッションのため代行不可。実装時にユーザー自身のターミナルで実行が必要 |
 | 5 | Next.js 16の静的エクスポート挙動 | AGENTS.mdの注意書き通り、breaking changesがある可能性。実装直前に `node_modules/next/dist/docs/` を再確認する |
 
