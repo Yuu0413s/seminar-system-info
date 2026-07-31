@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# seminar-system-info
+
+「つもり」と「実際」のズレを可視化する作業時間トラッカー **Tsumori** の紹介ページです。
+Tsumoriの機能紹介に加え、その開発の元になっている研究（実行しやすさ特徴量に基づくパーソナライズドタスク実行時間推薦）の概要も掲載しています。
+
+公開URL: [https://seminar-system-info.yuu0413.com](https://seminar-system-info.yuu0413.com)
+
+## 構成
+
+- トップページ（`/`）: Tsumoriの機能・使い方・技術スタックの紹介
+- 研究概要ページ（`/research`）: Tsumoriの元になっている研究の紹介
+
+## 技術スタック
+
+- [Next.js](https://nextjs.org)（App Router / 静的エクスポート）
+- [Tailwind CSS](https://tailwindcss.com)
+- [Cloudflare Workers](https://developers.cloudflare.com/workers/static-assets/)（Static Assets）でホスティング
 
 ## Getting Started
 
-First, run the development server:
+開発サーバーを起動する。
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[http://localhost:3000](http://localhost:3000) で確認できます。`app/page.tsx` を編集すると自動で反映されます。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ビルド
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+`next build` で静的ファイルを `out/` に生成します（`next.config.ts` の `output: "export"` による静的エクスポート）。
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+## デプロイ
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+`main` ブランチへのpushをトリガーに、GitHub Actions（`.github/workflows/deploy.yml`）が自動でCloudflare Workersへデプロイします。
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+手動でデプロイする場合は以下を実行します。
 
-## Deploy on Vercel
+```bash
+npm run deploy
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+ホスティング移行の背景・設計判断は [docs/design/cloudflare-workers-migration.md](docs/design/cloudflare-workers-migration.md) を参照してください。
