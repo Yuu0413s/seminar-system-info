@@ -275,7 +275,7 @@ export default function Home() {
             <span>— 見積もりと実績のズレを記録する作業時間トラッカー</span>
           </div>
           <div className="flex items-center gap-4">
-            <span>Built with Vite · React 19 · Hono · Neon PostgreSQL</span>
+            <span>Tsumori: Vite · React 19 · Hono · Neon PostgreSQL</span>
           </div>
           <p>&copy; {new Date().getFullYear()} Tsumori. All rights reserved.</p>
         </div>
