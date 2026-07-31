@@ -5,9 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
     "lint": "eslint",
+    "preview": "npm run build && wrangler dev",
     "deploy": "npm run build && wrangler deploy"
+  },
+  "engines": {
+    "node": ">=22.0.0"
   },
   "dependencies": {
     "next": "16.2.4",

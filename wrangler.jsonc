@@ -3,7 +3,8 @@
   "name": "seminar-info-page",
   "compatibility_date": "2026-07-31",
   "assets": {
-    "directory": "./out"
+    "directory": "./out",
+    "not_found_handling": "404-page"
   },
   "routes": [
     { "pattern": "seminar-system-info.yuu0413.com", "custom_domain": true }
