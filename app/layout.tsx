@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TaskChecker - タスク別作業時間トラッカー",
-  description: "タスク別に作業時間をリアルタイムで記録・管理するWebアプリ。開始・休憩・再開・終了の4ステータスで作業セッションを管理し、今日の作業を可視化します。",
+  title: "Tsumori - 見積もりと実績のズレを記録する作業時間トラッカー",
+  description: "「つもりだった時間」と「実際にかかった時間」のズレを記録して、時間の見積もり精度を上げるための作業時間トラッカー。Vite + React + Hono + Neon PostgreSQLで構築。",
 };
 
 export default function RootLayout({
