@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
@@ -11,6 +13,7 @@ export default function Home() {
             <a href="#features" className="hover:text-blue-600 transition-colors">機能</a>
             <a href="#how-it-works" className="hover:text-blue-600 transition-colors">使い方</a>
             <a href="#tech" className="hover:text-blue-600 transition-colors">技術</a>
+            <Link href="/research" className="hover:text-blue-600 transition-colors">研究概要</Link>
             <a
               href="https://tsumori.yuu0413.com/"
               target="_blank"
