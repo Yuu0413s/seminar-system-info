@@ -122,14 +122,18 @@ export default function Home() {
         </section>
 
         {/* ===== Research Note ===== */}
-        <section className="py-6 px-4 sm:px-6 border-b border-gray-100 bg-white">
-          <div className="max-w-3xl mx-auto text-center">
-            <p className="text-sm text-gray-500">
-              Tsumoriは、「実行しやすい時間帯」を推定するタスクスケジューリングに関する研究の一環として開発しています。
-              <Link href="/research" className="ml-1 text-blue-600 hover:text-blue-700 font-medium">
-                研究概要を見る →
-              </Link>
+        <section className="py-12 px-4 sm:px-6 bg-blue-50/70 border-y border-blue-100">
+          <div className="max-w-2xl mx-auto text-center">
+            <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+              Tsumoriは、「実行しやすい時間帯」を推定するタスクスケジューリングに関する
+              研究の一環として開発しています。
             </p>
+            <Link
+              href="/research"
+              className="mt-3 inline-flex items-center gap-1.5 text-blue-600 font-medium hover:text-blue-700 transition-colors"
+            >
+              研究概要を見る →
+            </Link>
           </div>
         </section>
 
