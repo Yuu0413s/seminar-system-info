@@ -1,0 +1,11 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "seminar-info-page",
+  "compatibility_date": "2026-07-31",
+  "assets": {
+    "directory": "./out"
+  },
+  "routes": [
+    { "pattern": "seminar-system-info.yuu0413.com", "custom_domain": true }
+  ]
+}
