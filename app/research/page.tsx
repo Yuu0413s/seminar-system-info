@@ -1,10 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+const title = "研究概要 - 実行しやすさ特徴量に基づくパーソナライズドタスク実行時間推薦 | Tsumori";
+const description =
+  "空き時間ではなく「実行しやすい時間帯」を推薦する研究の紹介。過去のタスク実行履歴からEase-of-Execution Featureを算出し、パーソナライズドなタスクスケジューリングを実現します。";
+
 export const metadata: Metadata = {
-  title: "研究概要 - 実行しやすさ特徴量に基づくパーソナライズドタスク実行時間推薦 | Tsumori",
-  description:
-    "空き時間ではなく「実行しやすい時間帯」を推薦する研究の紹介。過去のタスク実行履歴からEase-of-Execution Featureを算出し、パーソナライズドなタスクスケジューリングを実現します。",
+  title,
+  description,
+  openGraph: {
+    title,
+    description,
+  },
 };
 
 const historyFields = [
