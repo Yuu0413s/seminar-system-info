@@ -121,6 +121,18 @@ export default function Home() {
           </div>
         </section>
 
+        {/* ===== Research Note ===== */}
+        <section className="py-6 px-4 sm:px-6 border-b border-gray-100 bg-white">
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-sm text-gray-500">
+              Tsumoriは、「実行しやすい時間帯」を推定するタスクスケジューリングに関する研究の一環として開発しています。
+              <Link href="/research" className="ml-1 text-blue-600 hover:text-blue-700 font-medium">
+                研究概要を見る →
+              </Link>
+            </p>
+          </div>
+        </section>
+
         {/* ===== Features ===== */}
         <section id="features" className="py-24 px-4 sm:px-6">
           <div className="max-w-6xl mx-auto">
@@ -235,29 +247,6 @@ export default function Home() {
                 </div>
               ))}
             </div>
-          </div>
-        </section>
-
-        {/* ===== Research Note ===== */}
-        <section id="research" className="py-24 px-4 sm:px-6 bg-gray-50">
-          <div className="max-w-3xl mx-auto text-center">
-            <span className="inline-block mb-4 rounded-full bg-blue-100 px-4 py-1 text-xs font-semibold text-blue-700 tracking-wide uppercase">
-              研究との関わり
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
-              このアプリは研究のために作られています
-            </h2>
-            <p className="mt-4 text-gray-500 leading-relaxed">
-              Tsumoriは、実行しやすさ特徴量(Ease-of-Execution Feature)に基づく
-              パーソナライズドタスク実行時間推薦の研究のために、見積もり時間と実際の作業時間の
-              ズレを記録・収集するデータ収集システムとして開発しています。
-            </p>
-            <Link
-              href="/research"
-              className="mt-6 inline-flex items-center gap-1.5 text-blue-600 font-medium hover:text-blue-700 transition-colors"
-            >
-              研究概要を詳しく見る →
-            </Link>
           </div>
         </section>
 
