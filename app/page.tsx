@@ -10,10 +10,12 @@ export default function Home() {
             ⏱ Tsumori
           </span>
           <nav className="flex items-center gap-6 text-sm text-gray-600">
-            <a href="#features" className="hover:text-blue-600 transition-colors">機能</a>
-            <a href="#how-it-works" className="hover:text-blue-600 transition-colors">使い方</a>
-            <a href="#tech" className="hover:text-blue-600 transition-colors">技術</a>
-            <Link href="/research" className="hover:text-blue-600 transition-colors">研究概要</Link>
+            <div className="hidden sm:flex items-center gap-6">
+              <a href="#features" className="hover:text-blue-600 transition-colors">機能</a>
+              <a href="#how-it-works" className="hover:text-blue-600 transition-colors">使い方</a>
+              <a href="#tech" className="hover:text-blue-600 transition-colors">技術</a>
+              <Link href="/research" className="hover:text-blue-600 transition-colors">研究概要</Link>
+            </div>
             <a
               href="https://tsumori.yuu0413.com/"
               target="_blank"
