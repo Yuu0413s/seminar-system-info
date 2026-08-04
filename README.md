@@ -45,3 +45,11 @@ npm run deploy
 ```
 
 ホスティング移行の背景・設計判断は [docs/design/cloudflare-workers-migration.md](docs/design/cloudflare-workers-migration.md) を参照してください。
+
+### プレビューデプロイ（PR単位のデプロイ）
+
+現在は未設定です。ゼミ紹介用の静的ページで更新頻度・関係者数が少なく、`main` へのマージ前にローカル（`npm run dev` / `npm run build`）で見た目を確認できれば十分なため、追加のインフラを持ち込まない判断をしています。PR単位のプレビューが必要になった場合は改めて検討してください。
+
+### デプロイ失敗時の通知
+
+Slack等への通知は追加していません。現状は運用者が少なく、GitHub Actionsの実行結果はリポジトリの「Actions」タブで確認できます。必要な運用者はGitHub Actionsのメール/Web通知を各自有効化する前提とし（この通知は通知設定を有効化したユーザーにのみ届きます）、関係者が増えた場合はSlack等のチーム通知を改めて検討します。
